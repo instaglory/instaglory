@@ -1,2 +1,0 @@
-# instaglory
-Image-Sharing App

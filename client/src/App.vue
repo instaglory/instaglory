@@ -1,14 +1,20 @@
 <template>
-  <h1>{{ message }}</h1>
+  <signin>  </signin>
 </template>
 
 <script>
+
+import signin from './components/signin'
+
 export default {
   data() {
     return {
-      message: 'Hello world',
+      message: "Hello world"
     };
   },
+  components: {
+    signin
+  }
 };
 </script>
 
