@@ -2,20 +2,25 @@
   <div>
     <navbar></navbar>
     <uploadForm></uploadForm>
+    <signin>  </signin>
+    <uploadForm></uploadForm>
   </div>
 </template>
 
 <script>
 import navbar from './components/navbar'
+import signin from './components/signin
 import uploadForm from './components/uploadForm'
+
 export default {
   data() {
     return {
-      message: 'Hello world',
+      message: "Hello world"
     };
   },
   components:{
     navbar: navbar,
+    signin,
     uploadForm
   },
   methods:{
