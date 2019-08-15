@@ -1,8 +1,4 @@
-if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development'){
-    require('dotenv').config()
-}
-
-
+if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') require('dotenv').config()
 const express = require("express")
 const app = express()
 const cors = require('cors')
@@ -16,9 +12,9 @@ mongoose.connect(`mongodb://localhost/instaglory`, {useNewUrlParser: true}, func
     else console.log('success connect to database')
 });
 
-app.use(express.urlencoded({extended: false}))
-app.use(express.json())
 app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({extended: false}))
 
 app.use('/',route)
 app.use(errorHandler)

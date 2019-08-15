@@ -1,19 +1,24 @@
 <template>
-<div>
-  <uploadForm></uploadForm>
 
-</div>
+  <signin>  </signin>
+  <uploadForm></uploadForm>
+  
 </template>
 
 <script>
+
+import signin from './components/signin'
+
 import uploadForm from './components/uploadForm'
 export default {
   data() {
     return {
-      message: 'Hello world',
+      message: "Hello world"
     };
   },
-  components:{
+
+  components: {
+    signin,
     uploadForm
   },
   methods:{
