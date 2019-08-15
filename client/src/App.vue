@@ -1,14 +1,20 @@
 <template>
-  <h1>{{ message }}</h1>
+  <div>
+    <navbar></navbar>
+  </div>
 </template>
 
 <script>
+import navbar from './components/navbar'
 export default {
   data() {
     return {
       message: 'Hello world',
     };
   },
+  components:{
+    navbar: navbar
+  }
 };
 </script>
 
