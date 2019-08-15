@@ -1,11 +1,13 @@
 <template>
   <div>
     <navbar></navbar>
+    <uploadForm></uploadForm>
   </div>
 </template>
 
 <script>
 import navbar from './components/navbar'
+import uploadForm from './components/uploadForm'
 export default {
   data() {
     return {
@@ -13,7 +15,10 @@ export default {
     };
   },
   components:{
-    navbar: navbar
+    navbar: navbar,
+    uploadForm
+  },
+  methods:{
   }
 };
 </script>
